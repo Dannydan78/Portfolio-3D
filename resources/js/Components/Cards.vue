@@ -10,7 +10,7 @@
                     <h5 class="mb-2 text-2xl font-bold tracking-tight ">Presentation</h5>
                 </a>
                 <p class="mb-3 font-normal ">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                    acquisitions of 2021 so far, in reverse chronological order...</p>
                 <a href="#"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">
                     GO
