@@ -17,7 +17,7 @@
   let particlesGeometry;
   let sizes = {
     width: window.innerWidth,
-    height: 2000
+    height: window.innerHeight,
   };
   const clock = new THREE.Clock();
 
