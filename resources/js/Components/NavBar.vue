@@ -7,7 +7,7 @@
               <a href="#" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Presentation</a>
+              <a href="#" class="block py-2 px-3 text-white rounded  md:p-0 ">Presentation</a>
             </li>
             <li>
               <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
@@ -61,10 +61,14 @@
   nav {
     position: relative;
     overflow: hidden;
+    /* z-index: 1; */
+    opacity: 100;
   }
   .style {
     background-color: rgb(40, 21, 100);
     position: relative;
+    border: solid 1px #19f6e8;
+
   }
   .home{
     color: #19f6e8;
