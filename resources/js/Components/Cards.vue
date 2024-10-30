@@ -33,7 +33,7 @@ const resetAnimation = () => {
 
         <div class="card max-w-sm rounded-lg shadow" @mouseenter="animateCardText" @mouseleave="resetAnimation">
             <div class="p-5 rounded-lg">
-                <a href="presentation">
+                <a :href="route ('identity')">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight">Presentation</h5>
                     <div class="mb-3 font-normal title">Here are the biggest enterprise technology acquisitions of 2021 so
                         far, in reverse chronological order...</div>

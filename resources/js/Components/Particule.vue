@@ -30,29 +30,29 @@
   });
 
   function init() {
-    // Vérifiez si le canvas est trouvé
+
     if (!canvas.value) {
       console.error('Canvas not found!');
       return;
     }
 
-    // Scene
+
     scene = new THREE.Scene();
 
-    // Initialisation des particules
+    // Particules
     for (let i = 0; i < count; i++) {
       const i3 = i * 3;
       positions[i3] = (Math.random() - 0.5) * 10;
       positions[i3 + 1] = (Math.random() - 0.5) * 10;
       positions[i3 + 2] = (Math.random() - 0.5) * 10;
 
-      // Choisir les couleurs violet et bleu
+      // Colors
       const isPurple = Math.random() > 0.5;
-      colors[i3] = isPurple ? 0.5 : 0; // Rouge
-      colors[i3 + 1] = isPurple ? 0 : 0; // Vert
-      colors[i3 + 2] = isPurple ? 0.5 : 1; // Bleu
+      colors[i3] = isPurple ? 0.5 : 0;
+      colors[i3 + 1] = isPurple ? 0 : 0;
+      colors[i3 + 2] = isPurple ? 0.5 : 1;
 
-      // Vitesse aléatoire
+      // Vitesse
       velocities[i3] = (Math.random() - 0.01) * 0.01;
       velocities[i3 + 1] = (Math.random() - 0.01) * 0.01;
       velocities[i3 + 2] = (Math.random() - 0.01) * 0.01;
@@ -92,7 +92,7 @@
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('resize', onResize);
 
-    // Start animation
+    // Animation
     tick();
   }
 

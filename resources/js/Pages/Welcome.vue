@@ -2,9 +2,10 @@
 import { onMounted } from "vue";
 import anime from "animejs/lib/anime.es.js";
 import NavBar from "@/Components/NavBar.vue";
-import Presentation from "@/Components/Presentation.vue";
+
 import Cards from "@/Components/Cards.vue";
 import Particule from "@/Components/Particule.vue";
+import Begin from "@/Components/Begin.vue";
 
 defineProps({
     canLogin: {
@@ -60,7 +61,7 @@ onMounted(() => {
                                 </g>
                             </g>
                         </svg>
-                        <Presentation />
+                        <Begin />
                     </div>
                 </div>
                 <div class="flex- w-1/2 text-white">

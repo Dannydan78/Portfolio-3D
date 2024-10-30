@@ -12,7 +12,7 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('home');
 
 Route::middleware([
     'auth:sanctum',
@@ -24,4 +24,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/presentation', [PresentationController::class, 'index'])->name('presentation');
+Route::get('/identity', [PresentationController::class, 'index'])->name('identity');

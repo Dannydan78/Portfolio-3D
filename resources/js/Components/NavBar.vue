@@ -4,32 +4,33 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li class="home">
-              <a href="#" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
+              <a :href="route('home')" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white rounded  md:p-0 ">Presentation</a>
+              <a :href="route('identity')" class="block py-2 px-3 text-white md:p-0 hover:text-purple-600">Presentation</a>
+
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
+              <a href="#" class="block py-2 px-3 text-white rounded hover:text-purple-600 md:p-0 ">Experience</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white rounded  md:hover:text-blue-700 md:p-0  ">Passion</a>
+              <a href="#" class="block py-2 px-3 text-white rounded hover:text-purple-600 md:p-0  ">Passion</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white  hover:text-red-500 md:hover:bg-transparent md:border-0 md:p-0 ">Contact</a>
+              <a href="#" class="block py-2 px-3 text-white  hover:text-purple-600 md:p-0 ">Contact</a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="svg-wrapper">
+     <!-- <div class="svg-wrapper">
         <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 200 200">
           <path class="top" d="M5 5 H195" />
           <path class="bottom" d="M5 195 H195" />
           <path class="left" d="M5 5 V195" />
           <path class="right" d="M195 5 V195" />
         </svg>
-      </div>
+      </div> -->
     </nav>
   </template>
 
@@ -61,7 +62,7 @@
   nav {
     position: relative;
     overflow: hidden;
-    /* z-index: 1; */
+    z-index: 1;
     opacity: 100;
   }
   .style {
