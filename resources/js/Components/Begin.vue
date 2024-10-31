@@ -34,4 +34,6 @@ onMounted(() => {
 h1 span {
     color: #19f6e8;
 }
+
+
 </style>

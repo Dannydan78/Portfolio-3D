@@ -97,6 +97,17 @@ onMounted(() => {
 .footer {
 
 }
+
+path {
+    fill: transparent;
+    stroke: #19f6e8; /* Couleur du contour */
+    stroke-width: 3; /* Épaisseur du contour */
+  }
+
+  svg {
+    width: 100%; /* SVG largeur */
+    height: 100%; /* SVG la hauteur */
+  }
 </style>
 
 <!-- <footer class="py-16 text-center text-sm text-black dark:text-white/70">

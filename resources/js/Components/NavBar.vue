@@ -4,20 +4,20 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li class="home">
-              <a :href="route('home')" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
+              <a :href="route('home')" class="nav-link block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
             </li>
             <li>
-              <a :href="route('identity')" class="block py-2 px-3 text-white md:p-0 hover:text-purple-600">Presentation</a>
+              <a :href="route('identity')" class="nav-link block py-2 px-3 text-white md:p-0">Presentation</a>
 
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white rounded hover:text-purple-600 md:p-0 ">Experience</a>
+              <a href="#" class="nav-link block py-2 px-3 text-white rounded  md:p-0 ">Experience</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white rounded hover:text-purple-600 md:p-0  ">Passion</a>
+              <a href="#" class="nav-link block py-2 px-3 text-white rounded md:p-0  ">Passion</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-white  hover:text-purple-600 md:p-0 ">Contact</a>
+              <a href="#" class="nav-link block py-2 px-3 text-white md:p-0 ">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,11 +66,11 @@
     opacity: 100;
   }
   .style {
-    background-color: rgb(40, 21, 100);
+    background-image: linear-gradient(30deg, rgb(26, 36, 126), #8d1ca9);
     position: relative;
-    border: solid 1px #19f6e8;
+    border: solid 1px rgb(123, 130, 193);
+}
 
-  }
   .home{
     color: #19f6e8;
   }
@@ -84,14 +84,10 @@
     pointer-events: none; /* Pour que les clics passent au-dessus du SVG */
   }
 
-  path {
-    fill: transparent;
-    stroke: #19f6e8; /* Couleur du contour */
-    stroke-width: 3; /* Épaisseur du contour */
-  }
 
-  svg {
-    width: 100%; /* Assurez-vous que le SVG couvre toute la largeur */
-    height: 100%; /* Assurez-vous que le SVG couvre toute la hauteur */
-  }
+
+  .nav-link:hover {
+    color: #19f6e8;
+   transform:rotateZ(360deg)
+}
   </style>
