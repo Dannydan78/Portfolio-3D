@@ -1,3 +1,10 @@
+<template>
+  <div class="wrapper text-white">
+    <h1>GreenSock's TextPlugin<span></span></h1>
+    <h2>Set or animate text in sequence. Discover!</h2>
+  </div>
+</template>
+
 <script setup>
 import gsap from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
@@ -15,20 +22,21 @@ onMounted(() => {
 });
 </script>
 
-<template>
-  <div class="wrapper text-white">
-    <h1>GreenSock's TextPlugin<span></span></h1>
-    <h2>Set or animate text in sequence. Discover!</h2>
-  </div>
-</template>
-
 <style scoped>
-@import url('//fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+/* @import url('//fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap'); */
+@import url('https://fonts.cdnfonts.com/css/sequel');
+@import url('https://fonts.cdnfonts.com/css/noto-sans-vai');
 
 .wrapper {
-  margin: 4rem;
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 2vh;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-bottom: 6rem;
+  /* font-family: 'Signika Negative', sans-serif; */
+  /* font-family: 'Sequel', sans-serif; */
+  font-family: 'Noto Sans Vai', sans-serif;
+
+
+  font-size: 3vh;
 }
 
 h1 span {

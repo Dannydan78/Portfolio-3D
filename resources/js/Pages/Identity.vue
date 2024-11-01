@@ -1,3 +1,38 @@
+<template>
+    <NavBar />
+    <Particule />
+    <main class="class">
+        <div class="flex flex-row pt-12">
+            <div class="w-1/2 flex flex-col items-center justify-center text-white">
+                <div class="name" :class="{ 'name-visible': nameVisible }">
+                    {{ user[0].name }}
+                </div>
+                <div class="name" :class="{ 'name-visible': firstNameVisible }">
+                    {{ user[0].first_name }}
+                </div>
+                <div class="date pt-4" :class="{ 'date-visible': dateVisible }">
+                    {{ dayjs(user[0].date_of_birth).format("DD.MM.YYYY") }}
+                </div>
+            </div>
+            <div class="w-1/2 flex items-center justify-center text-white">
+                <div class="max-w-sm rounded-lg shadow-lg overflow-hidden">
+                    <img
+                        src="images/form.avif"
+                        alt="Image description"
+                        class="w-full h-48 object-cover img"
+                        :class="{ 'img-visible': imageVisible }"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="job fixed inset-0 flex flex-col items-center justify-center" :class="{ 'job-visible': jobVisible }">
+            {{ user[0].job }}
+            <button class="button mt-4">En savoir plus</button>
+        </div>
+
+    </main>
+</template>
+
 <script setup>
 import Particule from '@/Components/Particule.vue';
 import NavBar from '@/Components/NavBar.vue';
@@ -36,44 +71,11 @@ onMounted(() => {
 });
 </script>
 
-<template>
-    <NavBar />
-    <Particule />
-    <main class="class">
-        <div class="flex flex-row pt-12">
-            <div class="w-1/2 flex flex-col items-center justify-center text-white">
-                <div class="name" :class="{ 'name-visible': nameVisible }">
-                    {{ user[0].name }}
-                </div>
-                <div class="name" :class="{ 'name-visible': firstNameVisible }">
-                    {{ user[0].first_name }}
-                </div>
-                <div class="date pt-4" :class="{ 'date-visible': dateVisible }">
-                    {{ dayjs(user[0].date_of_birth).format("DD.MM.YYYY") }}
-                </div>
-            </div>
-            <div class="w-1/2 flex items-center justify-center text-white">
-                <div class="max-w-sm rounded-lg shadow-lg overflow-hidden">
-                    <img
-                        src="images/form.avif"
-                        alt="Image description"
-                        class="w-full h-48 object-cover img"
-                        :class="{ 'img-visible': imageVisible }"
-                    />
-                </div>
-            </div>
-        </div>
-        <div class="job fixed inset-0 flex flex-col items-center justify-center" :class="{ 'job-visible': jobVisible }">
-            {{ user[0].job }}
-            <button class="button mt-4">En savoir plus</button>
-        </div>
-
-    </main>
-</template>
-
 
 <style>
+@import url('https://fonts.cdnfonts.com/css/noto-sans-vai');
 .class {
+    font-family: 'Noto Sans Vai', sans-serif;
     position: relative;
     z-index: 1;
 }

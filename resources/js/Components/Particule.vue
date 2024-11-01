@@ -8,7 +8,7 @@
   import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
   const canvas = ref(null);
-  const count = 7000;
+  const count = 3000;
   const positions = new Float32Array(count * 3);
   const colors = new Float32Array(count * 3);
   const velocities = new Float32Array(count * 3);
