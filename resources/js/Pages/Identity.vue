@@ -2,7 +2,7 @@
     <NavBar />
     <Particule />
     <main class="class">
-        <div class="flex flex-row pt-12">
+        <div class="flex flex-row pt-12 mb-12">
             <div class="w-1/2 flex flex-col items-center justify-center text-white">
                 <div class="name" :class="{ 'name-visible': nameVisible }">
                     {{ user[0].name }}
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="job fixed inset-0 flex flex-col items-center justify-center" :class="{ 'job-visible': jobVisible }">
+        <div class="job relative inset-0 flex flex-col items-center justify-center mt-14" :class="{ 'job-visible': jobVisible }">
             {{ user[0].job }}
             <button class="button mt-4">En savoir plus</button>
         </div>
@@ -75,7 +75,7 @@ onMounted(() => {
 <style>
 @import url('https://fonts.cdnfonts.com/css/noto-sans-vai');
 .class {
-    font-family: 'Noto Sans Vai', sans-serif;
+    /* font-family: 'Noto Sans Vai', sans-serif; */
     position: relative;
     z-index: 1;
 }

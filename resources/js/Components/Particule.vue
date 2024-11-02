@@ -17,7 +17,7 @@
   let particlesGeometry;
   let sizes = {
     width: window.innerWidth,
-    height: window.innerHeight,
+    height: 2000,
   };
   const clock = new THREE.Clock();
 
@@ -75,8 +75,8 @@
     scene.add(particles);
 
     // Camera
-    camera = new THREE.PerspectiveCamera(60);
-    camera.position.z = 3;
+    camera = new THREE.PerspectiveCamera(50);
+    camera.position.z = 8;
 
     scene.add(camera);
 
@@ -129,7 +129,7 @@
       );
 
       const distance = particlePosition.distanceTo(camera.position);
-      const force = 0.1;
+      const force = 0.9;
 
       if (mouse.x > -1 && mouse.x < 1 && mouse.y > -1 && mouse.y < 1) {
         const direction = new THREE.Vector3();
@@ -174,4 +174,3 @@
   pointer-events: none;
 }
   </style>
-a

@@ -97,8 +97,8 @@ const resetAnimation = () => {
 }
 
 .card {
-    font-family: 'Noto Sans Vai', sans-serif;
-    border: 2px solid aqua;
+    /* font-family: 'Noto Sans Vai', sans-serif; */
+    border: 2px solid #19f6e8;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;

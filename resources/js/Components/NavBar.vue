@@ -67,7 +67,7 @@ onMounted(() => {
 @import url('https://fonts.cdnfonts.com/css/noto-sans-vai');
 
 nav {
-    font-family: 'Noto Sans Vai', sans-serif;
+    /* font-family: 'Noto Sans Vai', sans-serif; */
     position: relative;
     overflow: hidden;
     z-index: 1;
