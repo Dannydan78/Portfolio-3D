@@ -18,7 +18,6 @@
 
 <script setup>
 import { onMounted } from "vue";
-import anime from "animejs/lib/anime.es.js";
 import NavBar from "@/Components/NavBar.vue";
 
 import Cards from "@/Components/Cards.vue";

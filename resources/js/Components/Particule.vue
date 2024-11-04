@@ -63,7 +63,7 @@
     particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
     const particlesMaterial = new THREE.PointsMaterial({
-      size: 0.03,
+      size: 0.02,
       sizeAttenuation: true,
       vertexColors: true,
       transparent: true,

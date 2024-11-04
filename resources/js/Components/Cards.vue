@@ -1,6 +1,6 @@
 
 <template>
-    <div class="cards-container">
+    <div class="cards-container space-x-6">
 
         <div class="card max-w-sm rounded-lg shadow" @mouseenter="animateCardText" @mouseleave="resetAnimation">
             <div class="p-5 rounded-lg">
@@ -104,6 +104,7 @@ const resetAnimation = () => {
     transition: transform 0.3s ease-in-out;
     background-color: black;
     color: white;
+    box-shadow: rgba(25, 246, 232, 0.4) -5px 5px, rgba(25, 246, 232, 0.3) -10px 10px, rgba(25, 246, 232, 0.2) -15px 15px, rgba(25, 246, 232, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 .card::before {
@@ -124,21 +125,26 @@ const resetAnimation = () => {
     cursor: pointer;
     transform: translateY(-15px);
     color: thistle;
-    border: 2px solid violet;
-
+    border: 2px solid rgba(246, 25, 239, 0.5);
+    box-shadow: rgba(246, 25, 239, 0.4) -5px 5px, rgba(246, 25, 239, 0.3) -10px 10px, rgba(246, 25, 239, 0.2) -15px 15px, rgba(246, 25, 239, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 .card:hover h5 {
     color: aqua;
+
 }
 
 .card:hover::before {
     width: 200%;
     height: 200%;
+
 }
 
 .card>.p-5 {
     position: relative;
     z-index: 1;
+
 }
+
+
 </style>
