@@ -4,7 +4,7 @@
 
         <div class="card max-w-sm rounded-lg shadow" @mouseenter="animateCardText" @mouseleave="resetAnimation">
             <div class="p-5 rounded-lg">
-                <a :href="route ('identity')">
+                <a :href="route ('home')">
                     <h5 class="header mb-2 text-2xl font-bold tracking-tight">Présentation</h5>
                     <div class="mb-3 font-normal title">Here are the biggest enterprise technology acquisitions of 2021 so
                         far, in reverse chronological order...</div>

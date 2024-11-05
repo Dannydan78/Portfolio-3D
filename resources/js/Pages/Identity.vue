@@ -1,5 +1,5 @@
 <template>
-    <NavBar />
+    <NavBar :user="user"/>
     <Particule />
     <main class="class">
         <div class="flex flex-row pt-12 mb-12">
@@ -44,6 +44,8 @@ const props = defineProps({
     user: Object,
 
 });
+
+const { user } = props;
 
 const imageVisible = ref(false);
 const nameVisible = ref(false);

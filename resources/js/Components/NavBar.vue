@@ -2,7 +2,7 @@
     <nav class="style">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative z-10">
             <div class="portfolio text-white text-lg font-bold">
-                MyPortfolio
+            {{ user[0].name }}
             </div>
             <div class="hidden w-full md:block md:w-auto">
                 <ul
@@ -42,6 +42,12 @@
 <script setup>
 import { onMounted } from 'vue';
 import anime from 'animejs/lib/anime.es.js';
+
+const props = defineProps({
+    user: {
+        type: Object,
+    }
+});
 
 onMounted(() => {
     const paths = document.querySelectorAll('path');

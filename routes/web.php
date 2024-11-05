@@ -3,7 +3,9 @@
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
-use App\Http\Controllers\PresentationController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IdentityController;
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -24,4 +26,5 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/identity', [PresentationController::class, 'index'])->name('identity');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/identity', [IdentityController::class, 'index'])->name('identity');

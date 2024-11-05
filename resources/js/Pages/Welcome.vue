@@ -1,12 +1,12 @@
 <template>
-    <NavBar />
+    <NavBar :user="user"/>
     <Particule />
     <div class="app-container">
         <div class="content">
             <div class="flex flex-col">
                 <Begin />
             </div>
-            <div class="flex items-center justify-center px-14">
+            <div class="flex items-center justify-center px-14 mt-20">
                 <Cards />
             </div>
         </div>
@@ -17,14 +17,12 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
 import NavBar from "@/Components/NavBar.vue";
-
 import Cards from "@/Components/Cards.vue";
 import Particule from "@/Components/Particule.vue";
 import Begin from "@/Components/Begin.vue";
 
-defineProps({
+const props = defineProps({
     canLogin: {
         type: Boolean,
     },
@@ -39,7 +37,12 @@ defineProps({
         type: String,
         required: true,
     },
+    user: Object,
 });
+
+
+
+
 
 
 </script>

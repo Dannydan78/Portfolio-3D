@@ -58,10 +58,13 @@
         </div>
     </div>
     <div class="justify-center mt-12">
-        <div class="wrapper text-white pt-12">
-            <h1>GreenSock's TextPlugin<span></span></h1>
-            <h2>Set or animate text in sequence. Discover!</h2>
+        <div class=" text-white pt-12">
+            <h1 class="wrapper mt-6">GreenSock's TextPlugin<span></span></h1>
+            <h2 class="wrapper">Set or animate text in sequence. Discover!</h2>
         </div>
+        <div class="flex flex-row w-1/2 ml-12">
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quae vitae quo vel tenetur et voluptate consequuntur culpa officiis? Eius reiciendis, saepe labore maiores corporis ducimus velit ullam voluptatum laborum.</p>
+    </div>
     </div>
 </template>
 
@@ -123,10 +126,9 @@ onMounted(() => {
 @import url("https://fonts.cdnfonts.com/css/noto-sans-vai");
 
 .wrapper {
-    margin-top: 1rem;
+
     margin-left: 3rem;
-    margin-bottom: 6rem;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 h1 span {
