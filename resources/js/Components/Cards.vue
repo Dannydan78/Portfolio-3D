@@ -82,7 +82,7 @@ article a::after {
 
 article h2 {
     margin: 0 0 18px 0;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     color: var(--title-color);
     transition: color 0.3s ease-out;
 }

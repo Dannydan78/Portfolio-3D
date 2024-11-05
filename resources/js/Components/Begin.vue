@@ -152,10 +152,10 @@ path {
 
     color: #dfdcff;
     text-shadow:
-        1px 1px 0 #f619ef,
+        /* 1px 1px 0 #f619ef,
         -1px 1px 0 #3b09d4,
-        1px -1px 0 #dc19f6,
-        -1px -1px 0 #2fa7bc;
+        1px -1px 0 #dc19f6, */
+        -1px -1px 0 rgb(138, 43, 226, 1);
     font-size: 30px;
 }
 </style>
