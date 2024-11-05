@@ -136,10 +136,10 @@ h1 span {
 }
 
 path {
-    fill: transparent;
+    /* fill: transparent; */
     stroke: #19f6e8;
     /* Couleur du contour */
-    stroke-width: 3;
+    stroke-width: 2;
     /* Épaisseur du contour */
 }
 

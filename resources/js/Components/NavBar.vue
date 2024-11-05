@@ -90,7 +90,7 @@ nav {
 }
 
 .style {
-    background-image: linear-gradient(0deg, rgb(9, 14, 2), blueviolet);
+    background-image: linear-gradient(0deg, rgb(9, 14, 2), rgb(138, 43, 226, 0.5));
     /* background-color: black; */
     position: relative;
     border: solid 1px rgb(123, 130, 193);
