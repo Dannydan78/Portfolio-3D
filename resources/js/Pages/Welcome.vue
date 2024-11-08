@@ -1,7 +1,7 @@
 <template>
     <NavBar :user="user"/>
     <Particule />
-    <div class="app-container">
+    <div class="app-container box">
         <div class="content">
             <div class="flex flex-col">
                 <Begin />
@@ -11,9 +11,12 @@
             </div>
         </div>
     </div>
-    <footer class="footer py-16 text-center text-sm text-black dark:text-white/70">
-        Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }})
-    </footer>
+    <PicturesSlide />
+    
+    <!--<div data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="text-white">zgtzgtbhh</div> -->
+
+
+
 </template>
 
 <script setup>
@@ -21,6 +24,11 @@ import NavBar from "@/Components/NavBar.vue";
 import Cards from "@/Components/Cards.vue";
 import Particule from "@/Components/Particule.vue";
 import Begin from "@/Components/Begin.vue";
+import { onMounted } from "vue";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const props = defineProps({
     canLogin: {
@@ -40,12 +48,19 @@ const props = defineProps({
     user: Object,
 });
 
-
+onMounted(() => {
+  // Initialisation d'AOS
+  AOS.init({
+    duration: 1000, // Durée de l'animation (en millisecondes)
+    once: true, // Si `true`, l'animation ne se reproduira pas lors de nouveaux scrolls
+  });
+});
 
 
 
 
 </script>
+
 
 <style scoped>
 .app-container {

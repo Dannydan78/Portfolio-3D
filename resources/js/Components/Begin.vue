@@ -1,8 +1,8 @@
 <template>
-    <div class="flex items-center justify-center mt-8">
-        <h1 class="text-white text-4xl font-bold">Welcome to</h1>
+    <div class="main flex items-center justify-center">
+        <h1 class="text-white text-4xl font-bold">Danny</h1>
         <span class="ml-2 world text-4xl font-bold text-purple-500">
-            my world</span>
+            DARRAGON-KONKI</span>
     </div>
     <div class="relative selection:text-white  mt-6">
         <div class="line-drawing-demo flex items-center justify-center content-center pl-12">
@@ -59,11 +59,11 @@
     </div>
     <div class="justify-center mt-12">
         <div class=" text-white pt-12">
-            <h1 class="wrapper mt-6">GreenSock's TextPlugin<span></span></h1>
-            <h2 class="wrapper">Set or animate text in sequence. Discover!</h2>
+            <h1 class="wrapper mt-6">L'animation est un monde <span></span></h1>
+            <h2 class="wrapper">Visible et imaginaire ces détails peuvent être qu'une simple illusion.</h2>
         </div>
         <div class="flex flex-row w-1/2 ml-12">
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quae vitae quo vel tenetur et voluptate consequuntur culpa officiis? Eius reiciendis, saepe labore maiores corporis ducimus velit ullam voluptatum laborum.</p>
+        <p class="text-white">"Fasciné par le pouvoir de raconter des histoires à travers le mouvement et la profondeur, je m'efforce de créer des univers qui éveillent la curiosité. Ce portfolio illustre mon voyage créatif, mêlant ma personne, ma passion pour l'animation et mon goût pour les technologies immersives. Bienenue dans mon monde..."</p>
     </div>
     </div>
 </template>
@@ -94,7 +94,7 @@ onMounted(() => {
     const title = gsap.timeline({ repeat: 1111, repeatDelay: 1, yoyo: true });
     title.to("h1 span", {
         duration: 4,
-        text: " is so much fun you should try it some time!",
+        text: " ou chaque détails et couleurs comptent!",
     });
 
     // Animation
@@ -125,6 +125,10 @@ onMounted(() => {
 @import url("https://fonts.cdnfonts.com/css/sequel");
 @import url("https://fonts.cdnfonts.com/css/noto-sans-vai");
 
+.main{
+    padding-top: 7rem;
+}
+
 .wrapper {
 
     margin-left: 3rem;
@@ -149,13 +153,12 @@ path {
     height: 100%;
 }
 .framework {
-
-    color: #dfdcff;
-    text-shadow:
+    /* color: #dfdcff; */
+    /* text-shadow: */
         /* 1px 1px 0 #f619ef,
         -1px 1px 0 #3b09d4,
         1px -1px 0 #dc19f6, */
-        -1px -1px 0 rgb(138, 43, 226, 1);
+        /* -1px -1px 0 rgb(138, 43, 226, 1); */
     font-size: 30px;
 }
 </style>

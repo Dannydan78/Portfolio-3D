@@ -27,9 +27,9 @@ import anime from 'animejs';
 const animationPlayed = ref(false);
 
 const cards = ref([
-    { title: "Présentation", description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order...", link: route('identity'), image: "images/ordinateur.avif" },
-    { title: "Experience", description: "SplitText makes it easy to break apart the text in an HTML element so that each character, word, and/or line is wrapped in its own div tag.", link: "#", image: "images/data.jpeg" },
-    { title: "Passions", description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.", link: "#", image: "images/city.avif" }
+    { title: "Présentation", description: "Développeur web passionné, j'aime relever des défis et créer des expériences numériques uniques.", link: route('identity'), image: "images/ordinateur.avif" },
+    { title: "Expérience", description: "De Laravel à Vue.js, chaque projet a enrichi mon parcours de nouvelles compétences et humaines.", link: "#", image: "images/data.jpeg" },
+    { title: "Passions", description: "L’animation, la 3D et le jeux vidéos sont au cœur de ma créativité, donnant vie à mes idées et à des univers immersifs.", link: "#", image: "images/city.avif" }
 ]);
 
 const animateCardText = (event) => {
@@ -141,6 +141,7 @@ article:has(:hover, :focus) {
 .cards-container {
     display: grid;
     max-width: 1200px;
+    min-height: 480px;
     margin-inline: auto;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
